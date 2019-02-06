@@ -105,7 +105,7 @@ const webpackConfig = merge(baseWebpackConfig, {
             clientsClaim: true,
             runtimeCaching: [
                 {
-                    urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+                    urlPattern: /\.(?:png|jpg|jpeg|svg|ico)$/,
                     handler: 'staleWhileRevalidate',
                     options: {
                         cacheName: 'images',
